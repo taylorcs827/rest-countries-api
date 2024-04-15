@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root{
+  --dark-mode-elements: #2B3743;
+  --dark-mode-bg-body: #202D36;
+  --light-mode-elements: #FFFFFF;
+  --light-mode-bg-body: #FAFAFA;
+  --text-light: #000000;
+  --text-dark: #FFFFFF;
+}

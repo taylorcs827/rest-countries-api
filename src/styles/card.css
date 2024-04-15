@@ -1,0 +1,159 @@
+@import url('index.css');
+
+.card{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.img-card{
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.information-card{
+    padding: 2rem;
+    padding-bottom: 3.2rem;
+}
+
+.name-country{
+    font-weight: 900;
+    font-size: 17px;
+    padding-bottom: 1rem;
+}
+
+.population-country, .region-country,
+.capital-country{
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: .3rem;
+}
+
+span{
+    font-weight: 400;
+}
+
+/* Country Information  */
+.container-information{
+    position: fixed;
+    z-index: 100;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem 4rem 4rem 4rem;
+    overflow-y: auto;
+    display: none;
+}
+
+.container-information.visible{
+    display: block;
+}
+
+.btn-back{
+    margin-bottom: 2rem;
+    padding: .5rem 2rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.container-information article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-information article figure{
+    width: 500px;
+    height: 340px;
+}
+
+.container-information article figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-information .box-information h2{
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.container-information .box-text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.container-information .box-text li{
+    list-style: none;
+    padding: .3rem 0;
+    font-weight: 700;
+}
+
+.container-information .box-text span{
+    font-weight: 300;
+}
+
+.container-information .border-countries{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.container-information .border-countries .group-border{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-information .border-countries .group-border button{
+    flex-grow: 1;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:700px) {
+    .container-information{
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .container-information .box-text{
+        gap: 3rem;
+    }
+
+    .container-information article figure{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-information{
+        padding: 2rem 2rem 4rem 2rem;
+    }
+
+    .container-information .box-text{
+        gap: 3rem;
+    }
+    
+    .container-information article figure{
+        height: 260px;
+    }
+
+}
